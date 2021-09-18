@@ -15,6 +15,7 @@
     <string name="btn_text_div">/</string>
     <string name="btn_text_multi">*</string>
     <string name="btn_text_minus">-</string>
+    <string name="btn_text_plus">+</string>
     <string name="btn_text_equal">=</string>
     <string name="btn_text_c">C</string>
 </resources>
