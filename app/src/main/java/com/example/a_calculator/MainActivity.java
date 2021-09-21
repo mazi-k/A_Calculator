@@ -1,21 +1,39 @@
 package com.example.a_calculator;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements CalculatorView{
     private TextView resultText;
     private Calculator calculator;
+    private final static String TAG = "&&&";
+    private final static String KEY = "Calculator";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         resultText = findViewById(R.id.textField);
         calculator = new Calculator(this);
         initialButtons();
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putParcelable(KEY, calculator);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        calculator = savedInstanceState.getParcelable(KEY);
+        showResult(calculator.getExpressionString());
     }
 
     @Override

@@ -31,6 +31,17 @@ public class Calculator implements Parcelable {
         }
     };
 
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeStringList(expression);
+    }
+
     public String getExpressionString() {
         StringBuilder res = new StringBuilder();
         for (int i = 0; i < expression.size(); i++) {
@@ -235,15 +246,5 @@ public class Calculator implements Parcelable {
                 return argOne / argTwo;
         }
         return 0;
-    }
-
-    @Override
-    public int describeContents() {
-        return 0;
-    }
-
-    @Override
-    public void writeToParcel(Parcel dest, int flags) {
-        dest.writeStringList(expression);
     }
 }
