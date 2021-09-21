@@ -4,13 +4,11 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements CalculatorView{
     private TextView resultText;
     private Calculator calculator;
-    private final static String TAG = "&&&";
     private final static String KEY = "Calculator";
 
     @Override
