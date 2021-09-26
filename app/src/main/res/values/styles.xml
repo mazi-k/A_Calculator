@@ -25,5 +25,29 @@
         <item name="android:layout_marginTop">@dimen/edit_text_margin_top</item>
     </style>
 
+    <style name="NightCalcButtonStyle">
+        <item name="android:textSize">@dimen/calc_button_text_size</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="NightCalcButtonStyle.Num">
+        <item name="backgroundTint">@color/gray_300</item>
+    </style>
+
+    <style name="NightCalcButtonStyle.Sign">
+        <item name="backgroundTint">@color/gray_500</item>
+    </style>
+
+    <style name="NightCalcButtonStyle.Fun">
+        <item name="backgroundTint">@color/gray_600</item>
+    </style>
+
+    <style name="NightTextFieldStyle">
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginStart">@dimen/default_margin</item>
+        <item name="android:layout_marginEnd">@dimen/default_margin</item>
+        <item name="android:layout_marginTop">@dimen/edit_text_margin_top</item>
+    </style>
 
 </resources>

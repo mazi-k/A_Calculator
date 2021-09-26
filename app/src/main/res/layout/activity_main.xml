@@ -6,13 +6,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/background"/>
-
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/textField"
         android:layout_width="match_parent"
