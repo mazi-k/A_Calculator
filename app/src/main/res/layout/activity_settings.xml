@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity"
+    android:background="@color/blue_200">
+
+    <TextView
+        style="@style/TitleStyle"
+        android:id="@+id/settings_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/settings_title" />
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:layout_constraintTop_toBottomOf="@id/settings_title"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         android:gravity="start"
+         android:orientation="vertical"
+         android:layout_margin="20dp">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="30sp"
+             android:text="@string/settings_subtitle_theme"/>
+
+         <RadioGroup
+             android:id="@+id/themes_radio_group"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:paddingStart="@dimen/default_margin"
+             tools:ignore="RtlSymmetry">
+
+             <com.google.android.material.radiobutton.MaterialRadioButton
+                 android:id="@+id/radio_button_theme_auto"
+                 android:theme="@style/RadioButtonStyle"
+                 android:text="@string/settings_theme_auto"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"/>
+
+             <com.google.android.material.radiobutton.MaterialRadioButton
+                 android:id="@+id/radio_button_theme_day"
+                 android:theme="@style/RadioButtonStyle"
+                 android:text="@string/settings_theme_day"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"/>
+
+             <com.google.android.material.radiobutton.MaterialRadioButton
+                 android:id="@+id/radio_button_theme_night"
+                 android:theme="@style/RadioButtonStyle"
+                 android:text="@string/settings_theme_night"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"/>
+         </RadioGroup>
+
+
+
+     </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

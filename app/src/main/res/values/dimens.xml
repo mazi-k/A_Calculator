@@ -9,5 +9,7 @@
 
     <dimen name="edit_text_margin_top">50dp</dimen>
 
+    <dimen name="title_text_size">48sp</dimen>
+
 
 </resources>

@@ -1,15 +1,17 @@
 package com.example.a_calculator;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements CalculatorView{
     private TextView resultText;
     private Calculator calculator;
     private final static String KEY = "Calculator";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +21,11 @@ public class MainActivity extends AppCompatActivity implements CalculatorView{
         resultText = findViewById(R.id.textField);
         calculator = new Calculator(this);
         initialButtons();
+
+        findViewById(R.id.button_settings).setOnClickListener(v -> {
+            Intent intent = new Intent(this, SettingsActivity.class);
+            startActivity(intent);
+        });
     }
 
     @Override
