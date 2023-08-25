@@ -15,12 +15,11 @@
 
     <com.google.android.material.textview.MaterialTextView
         style="@style/TextFieldStyle"
-        android:id="@+id/textField"
+        android:layout_marginTop="@dimen/half_margin"
+        android:id="@+id/input_text_field"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="left|center"
-        android:hint="@string/enter_a_number_text"
-        tools:ignore="RtlHardcoded" />
+        android:hint="@string/enter_a_number_text" />
 
     <TableLayout
         android:layout_width="wrap_content"
@@ -178,6 +177,15 @@
 
 
         </TableRow>
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcButtonStyle.Fun"
+            android:id="@+id/button_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/half_margin"
+            android:text="@string/txt_settings">
+        </com.google.android.material.button.MaterialButton>
 
 
     </TableLayout>

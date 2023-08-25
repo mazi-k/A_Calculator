@@ -3,6 +3,7 @@
     <style name="CalcButtonStyle">
         <item name="android:textSize">@dimen/calc_button_text_size</item>
         <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">30dp</item>
     </style>
 
     <style name="CalcButtonStyle.Num">
