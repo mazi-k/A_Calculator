@@ -15,7 +15,7 @@
         tools:ignore="RtlHardcoded" />
 
     <TableLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="vertical"
@@ -31,9 +31,9 @@
                 android:id="@+id/button_eq"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_span="3"
                 android:layout_marginEnd="@dimen/default_margin"
                 android:text="@string/btn_text_equal"
+                android:layout_weight="3"
                 style="@style/CalcButtonStyle.Fun" />
 
             <com.google.android.material.button.MaterialButton
@@ -41,6 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/btn_text_c"
+                android:layout_weight="1"
                 style="@style/CalcButtonStyle.Fun"/>
 
         </TableRow>
@@ -54,30 +55,34 @@
             <com.google.android.material.button.MaterialButton
                 style="@style/CalcButtonStyle.Num"
                 android:id="@+id/button_num1"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_text_1" />
+                android:text="@string/btn_text_1"
+                android:layout_weight="1"/>
 
             <com.google.android.material.button.MaterialButton
                 style="@style/CalcButtonStyle.Num"
                 android:id="@+id/button_num2"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_text_2" />
+                android:text="@string/btn_text_2"
+                android:layout_weight="1"/>
 
             <com.google.android.material.button.MaterialButton
                 style="@style/CalcButtonStyle.Num"
                 android:id="@+id/button_num3"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_text_3" />
+                android:text="@string/btn_text_3"
+                android:layout_weight="1"/>
 
             <com.google.android.material.button.MaterialButton
                 style="@style/CalcButtonStyle.Sign"
                 android:id="@+id/button_plus"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_text_plus" />
+                android:text="@string/btn_text_plus"
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow
@@ -89,30 +94,34 @@
             <com.google.android.material.button.MaterialButton
                 style="@style/CalcButtonStyle.Num"
                 android:id="@+id/button_num4"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_text_4" />
+                android:text="@string/btn_text_4"
+                android:layout_weight="1"/>
 
             <com.google.android.material.button.MaterialButton
                 style="@style/CalcButtonStyle.Num"
                 android:id="@+id/button_num5"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_text_5" />
+                android:text="@string/btn_text_5"
+                android:layout_weight="1"/>
 
             <com.google.android.material.button.MaterialButton
                 style="@style/CalcButtonStyle.Num"
                 android:id="@+id/button_num6"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_text_6" />
+                android:text="@string/btn_text_6"
+                android:layout_weight="1"/>
 
             <com.google.android.material.button.MaterialButton
                 style="@style/CalcButtonStyle.Sign"
                 android:id="@+id/button_minus"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_text_minus" />
+                android:text="@string/btn_text_minus"
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow
@@ -124,30 +133,34 @@
             <com.google.android.material.button.MaterialButton
                 style="@style/CalcButtonStyle.Num"
                 android:id="@+id/button_num7"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_text_7" />
+                android:text="@string/btn_text_7"
+                android:layout_weight="1"/>
 
             <com.google.android.material.button.MaterialButton
                 style="@style/CalcButtonStyle.Num"
                 android:id="@+id/button_num8"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_text_8" />
+                android:text="@string/btn_text_8"
+                android:layout_weight="1"/>
 
             <com.google.android.material.button.MaterialButton
                 style="@style/CalcButtonStyle.Num"
                 android:id="@+id/button_num9"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_text_9" />
+                android:text="@string/btn_text_9"
+                android:layout_weight="1"/>
 
             <com.google.android.material.button.MaterialButton
                 style="@style/CalcButtonStyle.Sign"
                 android:id="@+id/button_multi"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_text_multi" />
+                android:text="@string/btn_text_multi"
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow
@@ -159,24 +172,26 @@
             <com.google.android.material.button.MaterialButton
                 style="@style/CalcButtonStyle.Num"
                 android:id="@+id/button_num0"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_span="2"
-                android:text="@string/btn_text_0" />
+                android:text="@string/btn_text_0"
+                android:layout_weight="2"/>
 
             <com.google.android.material.button.MaterialButton
                 style="@style/CalcButtonStyle.Sign"
                 android:id="@+id/button_point"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_text_point" />
+                android:text="@string/btn_text_point"
+                android:layout_weight="1"/>
 
             <com.google.android.material.button.MaterialButton
                 style="@style/CalcButtonStyle.Sign"
                 android:id="@+id/button_div"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_text_div" />
+                android:text="@string/btn_text_div"
+                android:layout_weight="1"/>
 
         </TableRow>
 
